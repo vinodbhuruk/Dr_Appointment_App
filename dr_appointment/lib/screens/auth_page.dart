@@ -44,7 +44,43 @@ class _AuthPageState extends State<AuthPage> {
             ),
             Config.spaceSmall,
             //login components here
-            LoginForm(),
+            const LoginForm(),
+            Config.spaceSmall,
+            Center(
+              child: TextButton(
+                onPressed: (){},
+                child: Text(
+              AppText.enText['forgot_password']!,
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              )
+            ),
+              ),
+            ),
+
+            // social button for sign in
+
+            const Spacer(),
+            Center(
+              child: Text(
+              AppText.enText['social_login  ']!,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.normal,
+                color: Colors.grey.shade500,
+              )
+            ),
+            ),
+            Config.spaceSmall,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const <Widget>[
+                // social button
+              ],
+            ),
+
           ],
         )),
       ),
