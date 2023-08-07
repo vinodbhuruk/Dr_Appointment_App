@@ -1,6 +1,6 @@
+import 'package:dr_appointment/components/main_layout.dart';
 import 'package:dr_appointment/screens/auth_page.dart';
 import 'package:dr_appointment/utils/config.dart';
-import 'package:dr_appointment/utils/main_layout.dart';
 import 'package:flutter/material.dart';
 
 void main() {

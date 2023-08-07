@@ -88,6 +88,27 @@ class _AuthPageState extends State<AuthPage> {
               ],
             ),
             Config.spaceSmall,
+            Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+            AppText.enText['signUp_text']!,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.normal,
+                color: Colors.grey.shade500,
+              ),
+              
+              ),
+              const Text( 'Sign Up',
+                style: TextStyle(
+                  fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                ),
+              ),
+                ],
+            ),
 
           ],
         ),
