@@ -1,9 +1,9 @@
-import 'package:dr_appointment/utils/text.dart';
+import 'package:dr_appointment/components/login_form.dart';
+import 'package:dr_appointment/components/social_button.dart';
 import 'package:flutter/material.dart';
-
-import '../components/login_form.dart';
-import '../components/social_button.dart';
+import 'package:dr_appointment/utils/text.dart';
 import '../utils/config.dart';
+
 
 
 class AuthPage extends StatefulWidget {
@@ -18,7 +18,8 @@ class _AuthPageState extends State<AuthPage> {
   Widget build(BuildContext context) {
     Config().init(context);
     return Scaffold(
-      body: Padding(padding: const EdgeInsets.symmetric(
+      body: Padding(
+        padding: EdgeInsets.symmetric(
         horizontal: 15,
         vertical: 15,
       ),
@@ -26,69 +27,72 @@ class _AuthPageState extends State<AuthPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+          children:<Widget> [
             Text(
-              AppText.enText['Welcome_text']!,
+            AppText.enText['Welcome_text']!,
               style: const TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
               ),
               
+              
             ),
             Config.spaceSmall,
             Text(
-              AppText.enText['signIn_text']!,
+            AppText.enText['signIn_text']!,
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
-              )
-            ),
+              ),
+              
+              ),
             Config.spaceSmall,
-            //login components here
-            const LoginForm(),
+            //login 
+           const LoginForm(),
             Config.spaceSmall,
             Center(
-              child: TextButton(
-                onPressed: (){},
-                child: Text(
-              AppText.enText['forgot_password']!,
+              child: TextButton(onPressed: (){}, 
+              child: Text(
+            AppText.enText['forgot_password']!,
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
-              )
-            ),
+              ),
+              
+              ),
               ),
             ),
 
-            // social button for sign in
-
+            //add social buttons here
             const Spacer(),
-            Center(
+            Center
+            (
               child: Text(
-              AppText.enText['social_login  ']!,
+            AppText.enText['social_login']!,
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.normal,
                 color: Colors.grey.shade500,
-              )
-            ),
+              ),
+              
+              ),
             ),
             Config.spaceSmall,
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: const <Widget>[
-                // social button
                 SocialButton(social: 'google'),
-                SocialButton(social: 'facebbok'),
+                SocialButton(social: 'facebook')
+
               ],
             ),
             Config.spaceSmall,
 
           ],
-        )),
+        ),
       ),
-    
+    )
     );
   }
 }

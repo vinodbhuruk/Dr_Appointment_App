@@ -30,7 +30,7 @@ class _LoginFormState extends State<LoginForm> {
                   hintText: 'Email Address',
                   labelText: 'Email',
                   alignLabelWithHint: true,
-                  prefixIcon: const Icon(Icons.email_outlined),
+                  prefixIcon:  Icon(Icons.email_outlined),
                   prefixIconColor: Config.primaryColor,
                 ),
           ),
@@ -44,7 +44,7 @@ class _LoginFormState extends State<LoginForm> {
                   hintText: 'Password',
                   labelText: 'Password',
                   alignLabelWithHint: true,
-                  prefixIcon: Icon(Icons.lock_outline),
+                  prefixIcon: const Icon(Icons.lock_outline),
                   prefixIconColor: Config.primaryColor,
                   suffixIcon: IconButton(
                     onPressed: (){

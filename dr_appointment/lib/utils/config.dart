@@ -33,6 +33,7 @@ static final spaceMedium=SizedBox(height: screenHeight! * 0.05,);
 static final spaceBig=SizedBox(height: screenHeight! * 0.08,);
 
 // textform filed border
+// ignore: constant_identifier_names
 static const OutlinedBorder = OutlineInputBorder(
   borderRadius: BorderRadius.all(Radius.circular(8)),
 );
