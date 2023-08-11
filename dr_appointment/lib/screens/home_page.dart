@@ -54,9 +54,9 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Row(
+             const  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const <Widget>[
+                children: <Widget>[
                   Text('Vinod Bhuruk',
                   style: TextStyle(
                     fontSize: 24,
@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
                   Config.spaceSmall,
                  Column(
                   children: List.generate(10, (index)  {
-                    return  DoctorCard();
+                    return const DoctorCard();
                   }
                   ),
                  ),

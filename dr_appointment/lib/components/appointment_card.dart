@@ -19,11 +19,11 @@ class _AppointmentCardState extends State<AppointmentCard> {
       child: Material(
         color: Colors.transparent,
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
             children:  <Widget> [
               //insert Row
-              Row(
+             const Row(
                 children: [
                   CircleAvatar(
                 backgroundImage: AssetImage('assets/doctor_1.jpg'),
@@ -53,7 +53,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
               ),
               Config.spaceSmall,
               // Schedule Info Here
-               ScheduleCard(),
+              const ScheduleCard(),
               Config.spaceSmall,
               // Action Button
               Row(
@@ -111,9 +111,9 @@ class ScheduleCard extends StatelessWidget {
       ),
       width: double.infinity,
       padding: const EdgeInsets.all(20),
-      child:  Row(
+      child:  const Row(
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: const <Widget>[
+        children:  <Widget>[
           Icon(Icons.calendar_today,
           color: Colors.white,
           size: 15,

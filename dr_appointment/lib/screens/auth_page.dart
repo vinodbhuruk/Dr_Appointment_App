@@ -19,7 +19,7 @@ class _AuthPageState extends State<AuthPage> {
     Config().init(context);
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
         horizontal: 15,
         vertical: 15,
       ),
@@ -79,9 +79,9 @@ class _AuthPageState extends State<AuthPage> {
               ),
             ),
             Config.spaceSmall,
-            Row(
+           const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const <Widget>[
+              children: <Widget>[
                 SocialButton(social: 'google'),
                 SocialButton(social: 'facebook')
 

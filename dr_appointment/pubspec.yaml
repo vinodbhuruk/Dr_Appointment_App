@@ -72,6 +72,7 @@ flutter:
       - assets/facebook.png
       - assets/profile1.jpg
       - assets\doctor_1.jpg
+      - assets\doctor_2.jpg
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
